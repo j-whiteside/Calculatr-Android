@@ -12,8 +12,211 @@
     tools:context="com.example.student.calculatr.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0, 1, 2, 3"
+        android:layout_alignParentTop="true"
+        android:paddingRight="4dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end"
+            android:id="@+id/firstTableRow">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/display_height"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_span="4"
+                android:textAlignment="viewEnd"
+                android:gravity="center_vertical"
+                android:paddingEnd="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end"
+            android:id="@+id/secondTableRow" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="Clear"
+                android:id="@+id/clearButton"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:backgroundTint="@color/function_buttons_color" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="DEL"
+                android:id="@+id/deleteButton"
+                android:layout_column="2"
+                android:backgroundTint="@color/function_buttons_color" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="/"
+                android:id="@+id/divisionButton"
+                android:layout_column="3"
+                android:backgroundTint="@color/function_buttons_color" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end"
+            android:id="@+id/thirdTableRow" >
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="7"
+                android:id="@+id/sevenButton"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="8"
+                android:id="@+id/eightButton"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="9"
+                android:id="@+id/nineButton"
+                android:layout_column="2" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="X"
+                android:layout_column="3"
+                android:id="@+id/multiplicationButton"
+                android:backgroundTint="@color/function_buttons_color" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end"
+            android:id="@+id/fourthTableRow" >
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="4"
+                android:id="@+id/fourButton"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="5"
+                android:id="@+id/fiveButton"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="6"
+                android:id="@+id/sixButton"
+                android:layout_column="2" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="+"
+                android:id="@+id/additionButton"
+                android:layout_column="3"
+                android:backgroundTint="@color/function_buttons_color" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle|beginning|end"
+            android:id="@+id/fifthTableRow" >
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="1"
+                android:id="@+id/oneButton"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="2"
+                android:id="@+id/twoButton"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="3"
+                android:id="@+id/threeButton"
+                android:layout_column="2" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="-"
+                android:id="@+id/subtractionButton"
+                android:layout_column="3"
+                android:backgroundTint="@color/function_buttons_color" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sixthTableRow">
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="0"
+                android:id="@+id/zeroButton"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="."
+                android:id="@+id/decimalButton"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="+/-"
+                android:id="@+id/negativeButton"
+                android:layout_column="2" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="="
+                android:id="@+id/equalsButton"
+                android:layout_column="3"
+                android:backgroundTint="@color/function_buttons_color" />
+        </TableRow>
+    </TableLayout>
+
 </RelativeLayout>

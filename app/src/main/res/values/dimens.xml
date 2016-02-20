@@ -3,4 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="display_height">85dp</dimen>
+    <dimen name="button_width">80dp</dimen>
+    <dimen name="button_double_width">160dp</dimen>
+    <dimen name="button_height">80dp</dimen>
 </resources>
