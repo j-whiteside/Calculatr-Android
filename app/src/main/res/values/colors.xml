@@ -3,5 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="function_buttons_color">#ff949494</color>
+    <color name="FUNCTION_BUTTONS">#ff949494</color>
+    <color name="NUMPAD_BUTTONS">#ffe3e3e3</color>
 </resources>
