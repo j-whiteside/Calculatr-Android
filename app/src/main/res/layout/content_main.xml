@@ -29,15 +29,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/textView"
+                android:text="0"
+                android:id="@+id/displayView"
                 android:layout_column="0"
                 android:layout_span="4"
                 android:paddingEnd="5dp"
                 android:singleLine="true"
                 android:gravity="center_vertical|right"
                 android:paddingStart="0dp"
-                android:password="false" />
+                android:password="false"
+                android:editable="true" />
 
         </TableRow>
 
@@ -55,7 +56,9 @@
                 android:id="@+id/clearButton"
                 android:layout_column="0"
                 android:layout_span="2"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:clickable="false"
+                android:onClick="clearDisplay" />
 
             <Button
                 android:layout_width="match_parent"
@@ -63,7 +66,8 @@
                 android:text="DEL"
                 android:id="@+id/deleteButton"
                 android:layout_column="2"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="eraseCharacter" />
 
             <Button
                 android:layout_width="match_parent"
@@ -71,7 +75,8 @@
                 android:text="/"
                 android:id="@+id/divisionButton"
                 android:layout_column="3"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="operatorInputHandler" />
 
         </TableRow>
 
@@ -88,7 +93,8 @@
                 android:text="7"
                 android:id="@+id/sevenButton"
                 android:layout_column="0"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -96,7 +102,8 @@
                 android:text="8"
                 android:id="@+id/eightButton"
                 android:layout_column="1"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -104,7 +111,8 @@
                 android:text="9"
                 android:id="@+id/nineButton"
                 android:layout_column="2"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -112,7 +120,8 @@
                 android:text="X"
                 android:layout_column="3"
                 android:id="@+id/multiplicationButton"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="operatorInputHandler" />
 
         </TableRow>
 
@@ -129,7 +138,8 @@
                 android:text="4"
                 android:id="@+id/fourButton"
                 android:layout_column="0"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -137,7 +147,8 @@
                 android:text="5"
                 android:id="@+id/fiveButton"
                 android:layout_column="1"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -145,7 +156,8 @@
                 android:text="6"
                 android:id="@+id/sixButton"
                 android:layout_column="2"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="@dimen/button_width"
@@ -153,7 +165,8 @@
                 android:text="+"
                 android:id="@+id/additionButton"
                 android:layout_column="3"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="operatorInputHandler" />
 
         </TableRow>
 
@@ -170,7 +183,8 @@
                 android:text="1"
                 android:id="@+id/oneButton"
                 android:layout_column="0"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -178,7 +192,8 @@
                 android:text="2"
                 android:id="@+id/twoButton"
                 android:layout_column="1"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -186,7 +201,8 @@
                 android:text="3"
                 android:id="@+id/threeButton"
                 android:layout_column="2"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -194,7 +210,8 @@
                 android:text="-"
                 android:id="@+id/subtractionButton"
                 android:layout_column="3"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="operatorInputHandler" />
 
         </TableRow>
 
@@ -210,7 +227,8 @@
                 android:text="0"
                 android:id="@+id/zeroButton"
                 android:layout_column="0"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="numberInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -218,7 +236,8 @@
                 android:text="."
                 android:id="@+id/decimalButton"
                 android:layout_column="1"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="decimalInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -226,7 +245,8 @@
                 android:text="+/-"
                 android:id="@+id/negativeButton"
                 android:layout_column="2"
-                android:background="@color/NUMPAD_BUTTONS" />
+                android:background="@color/NUMPAD_BUTTONS"
+                android:onClick="negativeInputHandler" />
 
             <Button
                 android:layout_width="match_parent"
@@ -234,7 +254,8 @@
                 android:text="="
                 android:id="@+id/equalsButton"
                 android:layout_column="3"
-                android:background="@color/FUNCTION_BUTTONS" />
+                android:background="@color/FUNCTION_BUTTONS"
+                android:onClick="operatorInputHandler" />
         </TableRow>
     </TableLayout>
 
